@@ -1,0 +1,79 @@
+#container {
+    margin: 0;
+    padding: 0;
+
+    height: 97vh;
+    width: 99vw;
+
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#pantalla {
+    height: 30em;
+    width: 45em;
+    background-color: gray;
+    border: 0.3em solid black;
+    border-radius: 0.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mando {
+    margin-left: 5em;
+    height: 25em;
+    width: 10em;
+    background-color: black;
+    border-radius: 0.3em;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.botonLeft {
+    height: 2em;
+    width: 2em;
+    background-color: grey;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botonRight {
+    height: 2em;
+    width: 2em;
+    background-color: grey;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
