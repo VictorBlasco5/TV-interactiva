@@ -1,3 +1,7 @@
+body {
+    user-select: none;
+}
+
 #container {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
     height: 97vh;
     width: 99vw;
 
-    background-color: lightgray;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,12 +19,16 @@
 #screen {
     height: 30em;
     width: 45em;
-    border: 0.3em solid black;
+    border: 0.3em solid white;
     border-radius: 0.5em;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.basicScreen {
+    background-color: black;
 }
 
 #control {
@@ -64,6 +72,18 @@
     cursor: pointer;
 }
 
+.buttonOn {
+    height: 2em;
+    width: 2em;
+    background-color: red;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 
 .button:hover {
     transition: 0.2s;
@@ -71,23 +91,3 @@
 }
 
 
-
-.canal1 {
-    background-color: aqua;
-}
-
-.canal2 {
-    background-color: purple;
-}
-
-.canal3 {
-    background-color: rgb(137, 223, 9);
-}
-
-.canal4 {
-    background-color: rgb(255, 115, 0);
-}
-
-.canal5 {
-    background-color: brown;
-}

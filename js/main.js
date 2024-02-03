@@ -1,15 +1,20 @@
-const buttons = document.getElementsByClassName("button")
 
-let arrayButtons = Array.from(buttons)
+function mostrarImagen(imagen) {
+    // Crear un elemento de imagen
+    let imgElement = document.createElement("img");
 
-let screen = document.getElementById("screen")
+    // Establecer la fuente (URL) de la imagen
+    imgElement.src = "img/" + imagen;
 
-arrayButtons.map(
-    item => {
-        item.addEventListener("click", (evento) => {
-            screen.classList.remove(screen.classList[screen.classList.length - 1])
-            screen.classList.add("canal" + evento.target.id.slice(-1))
-        })
-    }
-)
+    // Establecer atributos opcionales como texto alternativo, ancho, alto, etc.
+    imgElement.alt = "Dog";
+    imgElement.width = 720;
+    imgElement.height = 480;
+
+    // Limpiar el contenido anterior del contenedor
+    document.getElementById("screen").innerHTML = "";
+
+    // Agregar el elemento de imagen al contenedor div
+    document.getElementById("screen").appendChild(imgElement);
+  }
 
