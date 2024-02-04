@@ -17,6 +17,7 @@ body {
 }
 
 #screen {
+    pointer-events: none;
     height: 30em;
     width: 45em;
     border: 0.3em solid white;
@@ -61,9 +62,9 @@ body {
 }
 
 .imgOn {
+    pointer-events: none;
     height: 2em;
     width: 2em;
-    background-color: grey;
     border-radius: 50%;
 
     display: flex;
