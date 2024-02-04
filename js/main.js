@@ -2,21 +2,21 @@
 const mostrarImagen = (imagen) => {
     let encender = document.getElementById("redButton")
     if(encender.classList.contains("on")) {
-            // Crear un elemento de imagen
+            // Crea un elemento de imagen
     let imgElement = document.createElement("img");
 
-    // Establecer la fuente (URL) de la imagen
+    // Para establecer la fuente de la imagen
     imgElement.src = "img/" + imagen;
 
-    // Establecer atributos opcionales como texto alternativo, ancho, alto, etc.
-    imgElement.alt = "Dog";
+    // Para establece atributos como alto y ancho
+    imgElement.alt = "Loading";
     imgElement.width = 720;
     imgElement.height = 480;
-
-    // Limpiar el contenido anterior del contenedor
+    imgElement.style.borderRadius = "4px"
+    // Limpiar el contenido anterior del screen
     document.getElementById("screen").innerHTML = "";
 
-    // Agregar el elemento de imagen al contenedor div
+    // Agregar la imagen al screen
     document.getElementById("screen").appendChild(imgElement);
     }
 

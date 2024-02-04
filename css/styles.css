@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 
-.basicScreen {
+.offScreen {
     background-color: black;
 }
 
@@ -58,6 +58,18 @@ body {
     justify-content: space-evenly;
     align-items: flex-end;
 
+}
+
+.imgOn {
+    height: 2em;
+    width: 2em;
+    background-color: grey;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .button {
