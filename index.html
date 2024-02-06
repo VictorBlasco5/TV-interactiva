@@ -12,10 +12,15 @@
 
     <body>
         <div id="container">
-            <div id="screen" class="offScreen"></div>
+            <div id="screen" class="offScreen off">
+                <div id="barra">
+                    <div id="fechaYHora"></div>
+                    <div id="channel">c</div>
+                </div>               
+            </div>
             <div id="control">
                 <div id="left">
-                    <div id="redButton" class="buttonOn off" onclick="onOff(), mostrarImagen('home.jpg')"  ><img src="./img/onOff.jpeg" alt="onOff" class="imgOn"></div>
+                    <div id="redButton" class="buttonOn" onclick="onOff(), mostrarImagen('home.jpg')"><img src="./img/onOff.jpeg" alt="onOff" class="imgOn"></div>
                     <div class="button" onclick="mostrarImagen('bird.jpg')">2</div>
                     <div class="button" onclick="mostrarImagen('dog.jpeg')">4</div>
                     <div class="button" onclick="mostrarImagen('deer.jpg')">6</div>

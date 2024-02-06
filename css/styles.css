@@ -16,6 +16,35 @@ body {
 
 }
 
+#barra{
+    height: 2em;
+    width: 45em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+#fechaYHora{
+    margin-left: 1em;
+    height: 2em;
+    width: 22.5em;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#channel {
+    margin-right: 1em;
+    height: 2em;
+    width: 22.5em;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 #screen {
     pointer-events: none;
     height: 30em;
@@ -23,9 +52,6 @@ body {
     border: 0.3em solid white;
     border-radius: 0.5em;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .offScreen {
@@ -102,5 +128,4 @@ body {
     transition: 0.2s;
     background-color: ghostwhite;
 }
-
 

@@ -1,43 +1,56 @@
 
 const mostrarImagen = (imagen) => {
-  let encender = document.getElementById("redButton")
-  if (encender.classList.contains("on")) {
-    // Crea un elemento de imagen
-    let imgElement = document.createElement("img");
+  let pantalla = document.getElementById("screen")
+  if (pantalla.classList.contains("on")) {
+    
+    let imgElement = document.createElement("img");// Crea un elemento de imagen
 
-    // Para establecer la fuente de la imagen
-    imgElement.src = "img/" + imagen;
+    imgElement.src = "img/" + imagen; // Para establecer la fuente de la imagen
 
     // Para establece atributos como alto y ancho
     imgElement.alt = "Loading";
     imgElement.width = 720;
-    imgElement.height = 480;
+    imgElement.height = 449;
     imgElement.style.borderRadius = "4px"
     
-    // Limpiar el contenido anterior de screen
-    document.getElementById("screen").innerHTML = "";
-
-    // Agregar la imagen al screen
-    document.getElementById("screen").appendChild(imgElement);
+    document.getElementById("screen").innerHTML = "";   // Limpiar el contenido anterior de screen
+    document.getElementById("screen").appendChild(imgElement);   // Agregar la imagen al screen
   }
 
 }
 
-const onOff = () => {
-  let encender = document.getElementById("redButton");
-  if (encender.classList.contains("on")) {
-    encender.classList.remove("on")
-    encender.classList.add("off")
-    document.getElementById("screen").innerHTML = "";
-  } else {
-    encender.classList.add("on")
-    encender.classList.remove("off")
+ const onOff = () => {
+   let pantalla = document.getElementById("screen");
+    if (pantalla.classList.contains("on")) {  // Compruebo si la pantalla esta encendida
+      pantalla.classList.remove("on") // Quito ON si estuviera encendida
+      pantalla.classList.add("off")     // Añado off para apagarla
+      document.getElementById("screen").innerHTML = "";
+    } else {
+      pantalla.classList.add("on") // Enciendo la pantalla
+      pantalla.classList.remove("off")
+    }
   }
-}
 
+ let actualizarFechaYHora = () => {
+   
+    var fechaYHoraActual = new Date();
+  
+    // Para obtener año, mes, día ,etc
+    var year = fechaYHoraActual.getFullYear();
+    var month = fechaYHoraActual.getMonth() + 1; // Los meses van de 0 a 11, por eso se suma 1
+    var day = fechaYHoraActual.getDate();
+  
+    var hours = fechaYHoraActual.getHours();
+    var minutes = fechaYHoraActual.getMinutes();
+    var seconds = fechaYHoraActual.getSeconds();
+  
+    var fechaYHoraFormateada = day + ' / ' + month + ' / ' + year + ' - ' + hours + ':' + minutes + ':' + seconds;
+   
+    var divFechaYHora = document.getElementById('fechaYHora');  // Obtengo el div por su id
 
-
-
-
-//////////  INTENTO PANTALLA INICIO FALLIDO
-
+    divFechaYHora.textContent = fechaYHoraFormateada;  // Asigno fecha y hora al contenido del div
+  }
+  
+  setInterval(actualizarFechaYHora, 1000); // Para actualizar fecha y hora cada segundo (1000 milisegundos)
+  
+  actualizarFechaYHora(); // Llamo a la función al cargar la página para mostrar la fecha y hora
