@@ -15,21 +15,21 @@
             <div id="screen" class="offScreen off">
                 <div id="barra">
                     <div id="fechaYHora"></div>
-                    <div id="channel">c</div>
+                    <div id="channel"></div>
                 </div>               
             </div>
             <div id="control">
                 <div id="left">
                     <div id="redButton" class="buttonOn" onclick="onOff(), mostrarImagen('home.jpg')"><img src="./img/onOff.jpeg" alt="onOff" class="imgOn"></div>
-                    <div class="button" onclick="mostrarImagen('bird.jpg')">2</div>
-                    <div class="button" onclick="mostrarImagen('dog.jpeg')">4</div>
-                    <div class="button" onclick="mostrarImagen('deer.jpg')">6</div>
+                    <div class="button" onclick="mostrarImagen('bird.jpg'); mostrarCifra(2);">2</div>
+                    <div class="button" onclick="mostrarImagen('dog.jpeg'); mostrarCifra(4);">4</div>
+                    <div class="button" onclick="mostrarImagen('deer.jpg'); mostrarCifra(6);">6</div>
                 </div>
                 <div id="right">
-                    <div class="button"onclick="mostrarImagen('cat.jpg')">1</div>
-                    <div class="button"onclick="mostrarImagen('panther.jpeg')">3</div>
-                    <div class="button"onclick="mostrarImagen('turtle.jpg')">5</div>
-                    <div class="button"onclick="mostrarImagen('giraffe.jpg')">7</div>
+                    <div class="button"onclick="mostrarImagen('cat.jpg'); mostrarCifra(1);">1</div>
+                    <div class="button"onclick="mostrarImagen('panther.jpeg'); mostrarCifra(3);">3</div>
+                    <div class="button"onclick="mostrarImagen('turtle.jpg'); mostrarCifra(5);">5</div>
+                    <div class="button"onclick="mostrarImagen('giraffe.jpg'); mostrarCifra(7);">7</div>
                 </div>
 
             </div>

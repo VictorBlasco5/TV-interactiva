@@ -16,7 +16,14 @@ const mostrarImagen = (imagen) => {
     document.getElementById("screen").innerHTML = "";   // Limpiar el contenido anterior de screen
     document.getElementById("screen").appendChild(imgElement);   // Agregar la imagen al screen
   }
+}
 
+const mostrarCifra = (numero) => {
+  let pantalla = document.getElementById("screen");
+  if (pantalla.classList.contains("on")) {
+    let channelDiv = document.getElementById("channel");
+    channelDiv.innerHTML = numero
+  }
 }
 
  const onOff = () => {
