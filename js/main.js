@@ -11,7 +11,7 @@ const mostrarImagen = (imagen) => {
     imgElement.alt = "Loading";
     imgElement.width = 720;
     imgElement.height = 449;
-    imgElement.style.borderRadius = "0px 0px 4px 4px"
+    imgElement.style.borderRadius = "0px"
 
     cleanScreen();
 

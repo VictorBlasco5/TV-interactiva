@@ -27,7 +27,6 @@ body {
 
 #fechaYHora{
     margin-left: 1em;
-
     width: 22.5em;
     color: white;
     display: flex;
@@ -37,7 +36,6 @@ body {
 
 #channel {
     margin-right: 1em;
- 
     width: 22.5em;
     color: white;
     background-color: black;
@@ -49,8 +47,9 @@ body {
     pointer-events: none;
     height: 30em;
     width: 45em;
-    border: 0.3em solid white;
+    border: 2em solid rgb(17, 17, 17);
     border-radius: 0.5em;
+    padding-bottom: 2em;
 
 }
 
