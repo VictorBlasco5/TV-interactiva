@@ -11,9 +11,7 @@ Segundo proyecto desarrollado en GeeksHubs Academy en el que disponemos de una T
 - [Agradecimientos.](#agradecimientos)
 
 ### Tecnologías
-<img src="https://img.shields.io/badge/CSS3-0040FF?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-<img src="https://img.shields.io/badge/HTML5-FF8000?style=for-the-badge&logo=html5&logoColor=white" alt="HTM5" />
-<img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />
+<img src="https://img.shields.io/badge/CSS3-0040FF?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /> <img src="https://img.shields.io/badge/HTML5-FF8000?style=for-the-badge&logo=html5&logoColor=white" alt="HTM5" /> <img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=yelow" alt="JS" />
 
 ### Características
 - **Botón rojo** para encender y apagar.
@@ -22,7 +20,7 @@ Segundo proyecto desarrollado en GeeksHubs Academy en el que disponemos de una T
 - **Número del canal** en el que nos encontramos mostrado **en pantalla**.
 - **Fecha y hora** en tiempo real mostrados en pantalla.
 ### Implantación en vivo
-- 
+- [TV interactiva](https://victorblasco5.github.io/TV-interactiva/)
 ### Próximas mejoras
 - Introducción de botones para subir y bajar el **volumen**.
 - Botones **CH+** y **CH-** para **cambiar los canales**.
